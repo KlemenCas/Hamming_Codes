@@ -87,6 +87,7 @@
 3. Return: bitMsg
 
 
+
 **Class: CL_PARTY**
 
 *Attribtues*
