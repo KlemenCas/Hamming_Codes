@@ -42,6 +42,7 @@
 
 
 *Encode*
+
 1. Input Parameters: bitMsg, Party
 2. Function: insert parity bits, calculate their value and return the encoded message
 3. use InsertParityBits, ParityBitCoverage and CalcParityBit
@@ -49,6 +50,7 @@
 
 
 *CheckParityBit*
+
 1. Input Parameters: bitMsg, bit, sending_party
 2. Function: Checks whether the value of a parity bit of the received message is correct - based on the values of the bits that are covered by the parity bit.
 3. Use ParityBitCoverage and CalcParityBit
@@ -56,6 +58,7 @@
 
 
 *CheckAndCorrectMsg*
+
 1. Input Parameters: bitMsg, sending_party
 2. Function: corrects up to 1 wrong bit. Wrong bit's position is the sum of positions of Parity Bits that are wrong
 3. Note: Use CheckParityBit. Correct == flip (0 for 1, 1 for 0)
@@ -63,6 +66,7 @@
 
 
 *Decode*
+
 1. Input Parameters: bitMsg, party
 2. Function: correct the messege is necessary and remove parity bits
 3. Note: use CheckAndCorrectMsg, RemoveParityBits
@@ -70,12 +74,14 @@
 
 
 *Noise*
+
 1. Input Parameters: bitMsg
 2. Function: randomly flip one of the bits
 3. Return: bitMsg
 
 
 *StringToList*
+
 1. Input Parameters: string from the csv file
 2. covert to list of 0 and 1 (the bitMsg)
 3. Return: bitMsg
