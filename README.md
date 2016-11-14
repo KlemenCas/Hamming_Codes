@@ -1,4 +1,4 @@
-***Fuctions***
+#Fuctions
 
 *CheckIsPow2*
 
