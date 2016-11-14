@@ -55,7 +55,8 @@ class cl_party(object):
             for row in csvreader:
                 if any(row):
                     if int(row[0]) not in self.msg_received:
-                        print 'New message received. ID: ',row[0],' Message: ', hamming_defs.Decode(hamming_defs.StringToList(row[1]),self.party)
+                        msg=hamming_defs.Decode(hamming_defs.StringToList(row[1]),self.party)
+                        print self.party, '; new message received. ID: ',row[0],' Message: ', msg
                         self.msg_received.append(row[0])
             csvfile.close()
 

@@ -1,13 +1,6 @@
 import math
 import random
 
-def BitsToDec(bits):
-    b=''
-    index=len(bits)
-    while index>0:
-        b+=bits[index]
-    return int(b,2)
-
 def ParityBitCoverage(length,ParityPosition):
     a=list()
     #bits covered?
@@ -56,10 +49,6 @@ def CalcParityBit(sumBits,party):
     else:
         return (sumBits+1)%2
 
-def VerifyParityBit(bit_value,sumBits,sending_party):
-    sumBits
-        
-
 def CheckAndCorrectMessage(bits,sending_party):
     error_bit=0
     for x in range(1,len(bits)+1):
@@ -78,6 +67,7 @@ def Decode(bits,party):
     else:
         sending_party='odd'
     bits=CheckAndCorrectMessage(bits,sending_party)
+    return RemoveParityBits(bits)
     
 
 def CheckParityBit(bits,bit,sending_party):
