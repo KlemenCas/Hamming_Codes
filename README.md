@@ -1,4 +1,4 @@
-#Fuctions
+#Functions
 
 *CheckIsPow2*
 
@@ -86,7 +86,7 @@
 
 
 
-**Class: CL_PARTY**
+#Class: CL_PARTY
 
 *Attribtues*
 
