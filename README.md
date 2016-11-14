@@ -1,6 +1,4 @@
-# Hamming_Codes
-
-**Required Fuctions**
+***Fuctions***
 
 *CheckIsPow2*
 
